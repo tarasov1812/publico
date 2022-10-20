@@ -11,6 +11,7 @@
         font-family: 'Courier New', Courier, monospace; 
         font-size: 38px;
       }
+
       h3 {
         display: inline; 
         color: white; 
@@ -19,11 +20,41 @@
         padding: 5px; 
         font-family: 'Trebuchet MS';
       }
+
       header img {
         border-radius: 50%; 
         width: 150px; 
         height: 150px; 
         float:right
+      }
+
+      header p {
+        color: gray; 
+        margin-top: 0; 
+        margin-bottom: 100px
+      }
+
+      .sobre-mi p {
+        text-align:justify
+      }
+
+      .experiencia :nth-child(2) {
+        margin-bottom: 0;
+      }
+
+      .experiencia :nth-child(3) {
+        color: gray; 
+        margin: 0;
+      }
+
+      .estudios ul :nth-child(odd) {
+        margin-bottom: 0;
+      }
+
+      .estudios ul :nth-child(even) {
+        color: gray; 
+        margin-top: 0; 
+        list-style-type: none;
       }
     </style>
   </head>
@@ -34,13 +65,13 @@
     <header>
       <img src="../publico/foto.jpg" />
       <h1>Aleksandr Tarasov</h1>
-      <p style="color: gray; margin-top: 0; margin-bottom: 100px">desarrollador WEB</p>
+      <p>desarrollador WEB</p>
       <hr>
     </header>
     <main>
-      <section class="sobre mi">
+      <section class="sobre-mi">
         <h3>Sobre mi</h3>
-        <p style="text-align:justify">Mi nombre es Aleksandr Tarasov, tengo 32 años. Empece a estudiar en CENEC en Malaga en 2022 para convertirme 
+        <p>Mi nombre es Aleksandr Tarasov, tengo 32 años. Empece a estudiar en CENEC en Malaga en 2022 para convertirme 
         en desarrollador WEB y combiar a mi carrea. 12 años trabajaba como autonomo en el sector e-commerce. 
         Me gustaria trabajar en el sector IT porque me gustan computadores y me gusta leer los codigos. 
         Tengo varios hobbies: viajar, montar bicicleta, montar a snowboard, ir a gimnasio, cocinar</p>
@@ -59,17 +90,17 @@
       </section>
       <section class="experiencia">
         <h3>Experiencia</h3>
-        <p style="margin-bottom: 0;">Autonomo en el sector e-commerce</p>
-        <p style="color: gray; margin: 0">2010 - 2022</p>
+        <p>Autonomo en el sector e-commerce</p>
+        <p>2010 - 2022</p>
         <hr>
       </section>
       <section class="estudios">
         <h3>Estudios</h3>
         <ul>
-          <li style="margin-bottom: 0;">Bachillerato</li>
-          <li style="color: gray; margin-top: 0; list-style-type: none;">1996 - 2006</li>
-          <li style="margin-bottom: 0;">FP: CENEC</li>
-          <li style="color: gray; margin-top: 0; list-style-type: none;">2022 - 2024</li>
+          <li >Bachillerato</li>
+          <li>1996 - 2006</li>
+          <li>FP: CENEC</li>
+          <li>2022 - 2024</li>
         </ul>
         <hr>
       </section>
