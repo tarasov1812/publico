@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia</title>
+    <link href="./estilo-colombia.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="active"><a href="Colombia.html">Home</a></li>
+            <li><a href="Cartagena.html">Cartagena</a></li>
+            <li><a href="Cali.html">Cali</a></li>
+            <li><a href="San-Andres.html">S. Andres</a></li>
+        </ul>
+    </nav>
+    <article class>
+        <h1>Colombia</h1>
+        <p><span>Colombia,</span> oficialmente República de Colombia, es un país soberano situado en la región
+            noroccidental de <em>América del Sur.</em> Se constituye en un Estado unitario, social y democrático de
+            derecho cuya forma de gobierno es presidencialista.
+        </p>
+    </article>
+    <div id="caja">
+        <picture>
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="palma-grande-h.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="palma-grande-h.webp"
+                type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 1201px)" srcset="palma-grande-h.jpg"
+                type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="palma-grande-v.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="palma-grande-v.webp"
+                type="image/webp">
+            <source media="(orientation: portrait) and (min-width:601px)" srcset="palma-grande-v.jpg" type="image/jpg">
+
+            <!-- imágenes MEDIANAS -->
+            <!-- horizontales: mostraremos la grande cuando la pequeña no fuera suficiente, o sea más de 900 de ancho.
+        verticales: el mismo criterio, o sea más de 400 de ancho. -->
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="palma-mediana-h.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="palma-mediana-h.webp"
+                type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 901px)" srcset="palma-mediana-h.jpg"
+                type="image/jpeg">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="palma-mediana-v.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="palma-mediana-v.webp"
+                type="image/webp">
+            <source media="(orientation: portrait) and (min-width:401px)" srcset="palma-mediana-v.jpg" type="image/jpg">
+
+            <!-- imágenes PEQUEÑAS -->
+            <!-- en ambos casos, las usaremos cuando su ancho sea menor que su ancho máximo, para que no pixele
+        al ajustarse al portarretratos -->
+
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="palma-peque-h.avif"
+                type="image/avif">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="palma-peque-h.webp"
+                type="image/webp">
+            <source media="(orientation: landscape) and (max-width: 900px)" srcset="palma-peque-h.jpg"
+                type="image/jpeg">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="palma-peque-v.avif"
+                type="image/avif">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="palma-peque-v.webp"
+                type="image/webp">
+            <source media="(orientation: portrait) and (max-width: 400px)" srcset="palma-peque-v.jpg" type="image/jpg">
+
+            <img alt="Lap palmas de colombia" title="Un paisaje conocido" src="palma.jpeg" />
+        </picture>
+    </div>
+    <div class="container">
+        <a href="./Cartagena.html">
+            <div class="city">
+                <img src="./cartagena-peque.jpg">
+                <h2>Cartagena</h2>
+            </div>
+        </a>
+        <a href="./Cali.html">
+            <div class="city">
+                <img src="./cali-peque.jpeg">
+                <h2>Cali</h2>
+            </div>
+        </a>
+        <a href="./San-andres.html">
+            <div class="city">
+                <img src="./san-andres-peque.jpeg">
+                <h2>San Andres</h2>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <span>&#169 Author Aleksandr Tarasov<br>2022, Malaga</span>
+    </footer>
+</body>
+
+</html>
