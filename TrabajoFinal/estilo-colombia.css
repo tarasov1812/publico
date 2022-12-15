@@ -111,6 +111,16 @@ h1 {
     }
 }
 
+h1::first-letter {
+    font-size: 4.5vw;
+}
+
+@media screen and (orientation:portrait) {
+    h1::first-letter {
+        font-size: 6.5vh;
+    }
+}
+
 h2 {
     padding-top: 1vw;
     color: black;
@@ -127,6 +137,10 @@ p {
     background-color: rgba(33, 33, 33, 0.7);
     line-height: 1.5;
     font-size: 1.25em;
+}
+
+p::first-line {
+    background-color: rgba(33, 33, 33, 0.8);
 }
 
 @media screen and (orientation:portrait) {
