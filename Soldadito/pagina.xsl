@@ -4,10 +4,16 @@
 		<html>
 			<head></head>
 			<body>
-				<informacion style="background-color:powderblue;">
-					
-				</informacion>
 				<h1>Informacion de la cancion</h1>
+				<table border="1">
+    			<tr bgcolor="#9acd32">
+      			<th>verso</th>
+    			</tr>
+    			<tr>
+      			<td>.</td>
+      			<td>.</td>
+    			</tr>
+  				</table>
 			</body>
 		</html>
 	</xsl:template>
