@@ -4,18 +4,15 @@
 		<html>
 			<head></head>
 			<body>
-				<h1>Informacion de la cancion4</h1>
+				<h1>Informacion de la cancion5</h1>
 				<h2>
 					<xsl:value-of select="cancion/titulo"/>
-				</h2>
-				<table border="1">
-    			<tr bgcolor="#9acd32">
-      			<th>verso</th>
+				</h2>			
+    			  <xsl:for-each select="verso">
+   				 <tr>
+     			 <td><xsl:value-of select="verso"/></td>
     			</tr>
-    			<tr>
-      			<td>.</td>
-      			<td>.</td>
-    			</tr>
+   				 </xsl:for-each>
   				</table>
 			</body>
 		</html>
