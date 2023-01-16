@@ -4,7 +4,7 @@
 		<html>
 			<head></head>
 			<body>
-				<h1>Informacion de la cancion2</h1>
+				<h1>Informacion de la cancion3</h1>
 				<table border="1">
     			<tr bgcolor="#9acd32">
       			<th>verso</th>
