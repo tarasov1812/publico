@@ -1,40 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:element name="cancion">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="informacion">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="titulo" type="xs:string" />
-                            <xs:element name="autor" type="xs:string" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="texto" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="estrofa">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="precio" minOccurs="0">
-                                            <xs:complexType>
-                                                <xs:simpleContent>
-                                                    <xs:extension base="xs:string">
-                                                        <xs:attribute name="modena" use="required" />
-                                                    </xs:extension>
-                                                </xs:simpleContent>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="verso" maxOccurs="unbounded"
-                                            type="xs:string" />
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element ref="informacion"/>
+                <xs:element maxOccurs="unbounded" ref="texto"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="informacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"/>
+                <xs:element ref="autor"/>
+                <xs:element ref="fecha"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="autor" type="xs:string"/>
+    <xs:element name="fecha" type="xs:integer"/>
+    <xs:element name="texto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="estrofa"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="estrofa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="verso"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="verso" type="xs:string"/>
 </xs:schema>
