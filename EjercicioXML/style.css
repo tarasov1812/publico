@@ -1,0 +1,74 @@
+@font-face{
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    src: url("LibreBaskerville-Regular.ttf");
+}
+
+body {
+    text-align: center;
+    counter-reset: span;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+img{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 3vh;
+}
+
+span {
+    counter-reset: p;
+    color: blue;
+    background-color: yellow;
+    border-color: black;
+}
+
+span::after {
+    counter-increment: span;
+    content: " Estrofa " counter(span) ": ";
+    text-transform: uppercase; 
+    font-style: italic;
+    color:blue;
+    font-weight: bolder;
+    font-size: large;
+    background-color: yellow;
+}
+
+h1{
+    font-family: 'Libre Baskerville';
+    color: red;
+}
+
+h2{
+    font-family: 'Libre Baskerville';
+    color: blue;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:blue;
+}
+
+p:hover{
+    background-color: #dcdc00;
+    font-size: large;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+
+p::before {
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    counter-increment: p;
+    content: "Verso " counter(p) ": ";
+    
+}
+
+
