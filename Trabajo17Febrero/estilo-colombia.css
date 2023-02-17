@@ -1,0 +1,271 @@
+@font-face{
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    src: url("LibreBaskerville-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+}
+
+#modal p {
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+}
+
+#mostrar-modal {
+    display: none;
+}
+  
+#mostrar-modal + label {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px solid yellow;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 30px;
+    background: green;
+    display:inline;
+    color: #fff;
+    line-height: 3;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+  
+#mostrar-modal + label:hover {
+    background: #38678f;
+    border: 3px solid red;
+    font-size: 1.6em;
+}
+
+#mostrar-modal:checked ~ #modal {
+    top: 0;
+}
+
+#cerrar-modal {
+    display: none;
+}
+
+#cerrar-modal + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: tomato;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+#cerrar-modal:checked ~ #modal {
+    top: -100vh;
+}
+
+#cerrar-modal + label {
+    display: none;
+}
+
+#mostrar-modal:checked ~ #cerrar-modal + label {
+    display: block;
+}
+
+#cerrar-modal:checked + label {
+    display: none;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+a {
+    color: white;
+    margin:0;
+    border:0px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#caja {
+    height: 70vh;
+}
+
+@media screen and (orientation:portrait) {
+    #caja {
+        height: 90vh;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    picture {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    picture {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+}
+
+picture, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    transition: all 40s;
+}
+
+picture, img:hover {
+    transition: all 40s;
+    object-position: top;
+}
+
+h1 {
+    margin: 3vw 6vw;
+    color: white;
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+@media screen and (orientation:portrait) {
+    h1 {
+        font-size: 6vh;
+        margin: 5vh 6vh;
+    }
+}
+
+h1::first-letter {
+    font-size: 4.5vw;
+}
+
+@media screen and (orientation:portrait) {
+    h1::first-letter {
+        font-size: 6.5vh;
+    }
+}
+
+h2 {
+    padding-top: 1vw;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+}
+
+p {
+    position: absolute;
+    margin: 10vw 6vw;
+    width: 50vw;
+    padding: 0.5vw;
+    font-style: italic;
+    color: #9b9b9b;
+    background-color: rgba(33, 33, 33, 0.7);
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+
+@media screen and (orientation:portrait) {
+    p {
+        margin: 12vh 6vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    p {
+        width: 80vw;
+    }
+}
+
+.container {
+    margin: -12vh 5vh 0 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.city {
+    border: 2vh solid white;
+    height: 25vh;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.city:hover{
+    border: 1vh solid  lightcyan;
+    transition: all 0.5s;
+}
+
+
+.city img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#caja-city {
+    margin: 3vw auto;
+    height: 40vw;
+    width: 70vw;
+}
+
+footer {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
+
+@media screen and (orientation:portrait) {
+    footer {
+        display: none;
+    }
+}
+
+footer span {
+    color: black;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
