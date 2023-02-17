@@ -10,12 +10,11 @@
     box-sizing: border-box;
 }
 
-
 #modal {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.93);
     color: #fff;
     position: fixed;
-    top: 0;
+    top: -100vh;
     left: 0;
     height: 100vh;
     width: 100vw;
@@ -35,16 +34,7 @@
     text-align: center;
 }
 
-#modal {
-    background: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    transition: all .5s;
-}
+
 
 #mostrar-modal {
     display: none;
@@ -54,15 +44,14 @@
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
     border: 3px solid yellow;
+    background: green;
+    display:inline;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
     font-size: 1em;
     font-weight: bold;
     margin: 30px;
-    background: green;
-    display:inline;
-    color: #fff;
-    line-height: 3;
-    padding: 10px 30px;
-    cursor: pointer;
 }
   
 #mostrar-modal + label:hover {
@@ -84,16 +73,17 @@
     top: 1em;
     right: 1em;
     z-index: 1;
-    color: #fff;
+    color: white;
+    font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
-    background: tomato;
+    background: red;
     width: 25px;
     height: 25px;
     line-height: 25px;
     text-align: center;
     border-radius: 50%;
-    transition: all .5s;
+    transition: all .10s;
 }
 
 #cerrar-modal:checked ~ #modal {
