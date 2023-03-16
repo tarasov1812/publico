@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="pagina.xsl"?>
 <skills xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pagina.xsd">
     <informacion>
-        <titulo>Skills</titulo>
-        <autor>Tarasov Aleksandr</autor>
+        <titulo>THe most used</titulo>
+        <autor>Programm</autor>
         <fecha>2023</fecha> 
     </informacion>
 
