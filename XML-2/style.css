@@ -20,7 +20,7 @@ span {
 
 span::after {
     counter-increment: span;
-    content: " Programm " counter(span) ": ";
+    content: " PROGRAM " counter(span) ": ";
     text-transform: uppercase; 
     font-style: italic;
     color:blue;
