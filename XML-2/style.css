@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    src: url("LibreBaskerville-Regular.ttf");
+}
+
+body {
+    text-align: center;
+    counter-reset: span;
+    background-color:#007cba;
+}
+
+span {
+    counter-reset: p;
+    color: blue;
+    background-color: white;
+    border-color: black;
+    padding:5px;
+}
+
+span::after {
+    counter-increment: span;
+    content: " Programm " counter(span) ": ";
+    text-transform: uppercase; 
+    font-style: italic;
+    color:blue;
+    font-weight: bolder;
+    font-size: large;
+    background-color: white;
+}
+
+h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: white;
+}
+
+h2{
+    font-family: 'Libre Baskerville';
+    color: white;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:blue;
+}
+
+p:hover{
+    background-color: black;
+    font-size: large;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+p::before {
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    counter-increment: p;
+    content: "- " counter(p) ": ";   
+}
+
+

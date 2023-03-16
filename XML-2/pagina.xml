@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pagina.xsl"?>
+<skills xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pagina.xsd">
+    <informacion>
+        <titulo>Skills</titulo>
+        <autor>Tarasov Aleksandr</autor>
+        <fecha>2023</fecha> 
+    </informacion>
+
+    <texto>
+        <branch>
+            <technology>Visual Studio Code</technology>
+        </branch>
+    </texto>
+
+    <texto>
+        <branch>
+            <technology>Eclipse</technology>
+        </branch>
+    </texto>
+
+    <texto>
+        <branch>
+            <technology>GitHubDesktop</technology>
+        </branch>
+    </texto>
+
+    <texto>
+        <branch>
+            <technology>GoogleChrome</technology>
+        </branch>
+    </texto>
+
+    <texto>
+        <branch>
+            <technology>Bash-Terminal</technology>
+        </branch>
+    </texto>
+
+</skills>
