@@ -16,6 +16,7 @@ h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Cambiamos colores span en h1 */
 #ta {
     color: green;
 }
@@ -42,6 +43,10 @@ h2 {
     margin: 0 auto;
 }
 
+#container {
+    display: none;
+}
+
 .linea {
     display: flex;
     flex-direction: row;
@@ -59,7 +64,6 @@ h2 {
     border: 5px solid #000000;
     border-radius: 10px;
 }
-
 
 .buttons {
     font-size: 2.5vw;

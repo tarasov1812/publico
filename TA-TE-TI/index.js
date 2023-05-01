@@ -14,20 +14,8 @@ info.onclick = function() {
 }
 
 // creamus un ivento onclick en botom jugar
+
 jugar.onclick = function() {
-    // pedimos los nombre del jugadores con prompt
-    let firstPlayerName = prompt('Dime el nombre del 1 jugador');
-    let secondPlayerName = prompt('Dime el nombre del 2 jugador');
-
-    // ponemos los nombres de jugadores por defecto, 
-    // en caso si el usuario no pone los nombres
-    if(firstPlayerName === null || firstPlayerName === ''){
-        firstPlayerName = 'Jugador 1';
-    }
-    if(secondPlayerName === null || secondPlayerName === ''){
-        secondPlayerName = 'Jugador 2';
-    }
-
     // añadimos a las variables 9 cuadrados para el juego
     const box1 = document.getElementById('1');
     const box2 = document.getElementById('2');
@@ -46,7 +34,27 @@ jugar.onclick = function() {
         [box7, box8, box9]
     ];
 
-    // El jugo tiene dos jugadores (con 'O' y con 'X')
+    // mostramos los 9 cuadrodos por la pantalla cuando empieze el juego
+    const container = document.getElementById('container');
+    container.style.display = 'block';
+
+    // escondimos el boton "jugar"
+    jugar.style.display = 'none';
+
+    // pedimos los nombre del jugadores con prompt
+    let firstPlayerName = prompt('Dime el nombre del 1 jugador');
+    let secondPlayerName = prompt('Dime el nombre del 2 jugador');
+
+    // ponemos los nombres de jugadores por defecto, 
+    // en caso si el usuario no pone los nombres
+    if(firstPlayerName === null || firstPlayerName === ''){
+        firstPlayerName = 'Jugador 1';
+    }
+    if(secondPlayerName === null || secondPlayerName === ''){
+        secondPlayerName = 'Jugador 2';
+    }
+
+    // El jugo tiene dos jugadores (con simbolo 'O' y con 'X')
     let currentPlayer = 'X'; 
     // creamos variable para contar los pasos
     let moveCount = 0;
@@ -109,11 +117,13 @@ jugar.onclick = function() {
                     alert(secondPlayerName + " ganó!\n Felicitaciones!!!!!!");
                 }
                 location.reload(); 
+                container.style.display = 'none';
             // si paso 9 turnos - significa que es empate
             // empesamos otro juego
             } else if (moveCount === 9) {
                 alert("EMPATE!");
-                location.reload();
+                location.reload(); 
+                container.style.display = 'none';
             } else {
                 switchPlayer();
             }
