@@ -19,14 +19,31 @@ h1 {
 /* Cambiamos colores span en h1 */
 #ta {
     color: green;
+    transform: rotate(15deg);
+    display: inline-block;
 }
 
 #te{
     color: orange;
+    transform: rotate(-15deg);
+    display: inline-block;
 }
 
 #ti{
     color: yellow;
+    transform: rotate(15deg);
+    display: inline-block;
+}
+
+/* un poco de animation en las letras */
+h1 #ta:hover, h1 #te:hover, h1 #ti:hover {
+    transform: translateY(-25px);
+}
+  
+h1 #ta, h1 #te, h1 #ti{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
 }
 
 h2 {
