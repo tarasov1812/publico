@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('usuario').innerHTML = '🧝 ' + nombre;
     }
     console.log('Usuario logado - ' + nombre);
+    console.log('Aleksandr Tarasov, 1DAW, CENEC');
 });
 
   // Llamar a la función al hacer clic en el botón "Aplicar"
