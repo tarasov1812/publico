@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('authorModal').style.textTransform = "lowercase";
     }
   }
-  let nombre = window.localStorage.getItem("nombreUsuario");
+  let nombre = window.sessionStorage.getItem("nombreUsuario");
   
     if (nombre) {
       document.getElementById('usuario').innerHTML = '🧝 ' + nombre;
