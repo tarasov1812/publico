@@ -1,17 +1,10 @@
 /**
- * Index.js inclue todas las funciones para el juego de TA-TE-TI
+ * juego.js inclue todas las funciones para el juego de TA-TE-TI
  * @author Aleksandr Tarasov 1DAW
  */
 
-
 // añadimos a las variables los botones
 const jugar = document.getElementById('juego');
-const info = document.getElementById('info');
-
-// despues a pinchar al boton info sale un alert que muesta el author del programma
-info.onclick = function() {
-    alert('Juego TA-TE-TI hecho por Aleksandr Tarsov 1 DAW, CENEC');
-}
 
 // creamus un ivento onclick en botom jugar
 
@@ -155,63 +148,3 @@ jugar.onclick = function() {
         }
     }
 }
-
-// modo dia noche
-
-let modo = leerModoActual();
-
-function leerModoActual() {
-    // devolverá modo dia se no hay modo guardado
-    let modo = window.localStorage.getItem("modoGuardado");
-    if (!modo) {
-        modo = "dia";
-    } 
-    return modo;   
-}
-
-function ponerModoDia () {
-    let todo = document.getElementById("todo");
-    todo.style.backgroundColor = "aquamarine";
-    todo.style.color = "black";
-    window.localStorage.setItem("modoGuardado", "dia");
-
-    let iconoDia = document.getElementById('dia');
-    iconoDia.style.display="none";
-
-    let iconaNoche = document.getElementById('noche');
-    iconaNoche.style.display = "block";
-}
-
-function ponerModoDNoche () {
-    let todo = document.getElementById("todo");
-    todo.style.backgroundColor = "darkcyan";
-    todo.style.color = "white";
-    window.localStorage.setItem("modoGuardado", "noche");
-    
-    let iconoDia = document.getElementById('dia');
-    iconoDia.style.display="block";
-
-    let iconaNoche = document.getElementById('noche');
-    iconaNoche.style.display = "none";
-}
-console.log(modo);
-
-const dia = document.getElementById('dia');
-const noche = document.getElementById('noche');
-dia.onclick = ponerModoDia;
-noche.onclick = ponerModoDNoche;
-
-// adjustes
-// let author = document.getElementById('author');
-function aplicarCambios(){
-    var color = document.getElementsByName('colorElegido')[0];
-
-    var author = document.getElementsByName('nombre')[0];
-    var nombreElegido = author[author.selectedIndex].value;
-
-    // aplicamos el color y el tamaño a todo el documento
-    document.getElementById('author').style.color = color.value;
-    document.getElementById('author').innerHTML = nombreElegido;
-}
-
-document.getElementById('aplicar').onclick = aplicarCambios;

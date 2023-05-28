@@ -1,0 +1,42 @@
+/* Author Aleksandr Tarasov 1DAW */
+body {
+    text-align: center;
+    counter-reset: span;
+}
+
+span {
+    counter-reset: p;
+    color: blue;
+    background-color: green;
+    border-color: black;
+    width: 30%;
+    margin: 0 auto;
+}
+
+span::after {
+    counter-increment: span;
+    content: " Estrofa " counter(span) ": ";
+    text-transform: uppercase; 
+    font-style: italic;
+    color:blue;
+    font-weight: bolder;
+    font-size: large;
+    background-color: orange;
+}
+
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::before {
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    counter-increment: p;
+    content: "Verso " counter(p) ": ";   
+}
+
+#usuario {
+    text-align: left;
+}

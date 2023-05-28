@@ -1,0 +1,54 @@
+/* Author Aleksandr Tarasov 1DAW */
+
+body {
+    justify-content: flex-start;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 1.5vw;
+}
+
+#ajustes{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+}
+
+#aplicar {
+    margin-top: 8px;
+    padding:14px 0;
+    background-color: #FFFFFF;
+    color: #0057FF;
+    border: 1px solid #0057FF;
+    border-radius: 10px;
+    width: 12vw;
+}
+
+select {
+    font-size: 1vw;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    width: 12vw;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select option {
+    padding: 14px 0;
+    background-color: #0057FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}

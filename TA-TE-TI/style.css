@@ -6,10 +6,10 @@ body {
     justify-content: center;
     height: 95vh;
     background-color: aquamarine;
-    text-align: center;
 }
 
 h1 {
+    text-align: center;
     color: rebeccapurple;
     font-size: 4vw;
     margin: 2px;
@@ -47,10 +47,19 @@ h1 #ta, h1 #te, h1 #ti{
 }
 
 h2 {
+    text-align: center;
     font-size: 3vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: darkblue;
     margin: 2px;
+}
+
+p {
+    font-size: 1vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    margin: 2px;
+
 }
 
 .container {
@@ -90,7 +99,6 @@ h2 {
     flex-direction: column;
     font-family:'Courier New', Courier, monospace;
     width: 30vw;
-
 }
 
 button:hover {
@@ -115,6 +123,63 @@ button:hover {
     border-radius: 10px;
 }
 
+#ajustes{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #0057FF;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+#aplicar {
+    margin-top: 16px;
+    padding:14px 0;
+    background-color: #FFFFFF;
+    color: #0057FF;
+    border: 1px solid #0057FF;
+    border-radius: 10px;
+    width: 12vw;
+}
+
 #info:hover, #juego:hover {
     border: 1px solid orange;
+}
+
+select {
+    font-size: 1vw;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    width: 12vw;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select option {
+    padding: 14px 0;
+    background-color: #0057FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+#zonaModo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    background-color: blue;
+}
+
+#dia {
+    display: none;
+}
+
+img {
+    width: 100%;
+    position: absolute;
 }

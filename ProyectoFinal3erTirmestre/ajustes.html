@@ -1,0 +1,72 @@
+<!-- Author Aleksandr Tarasov 1DAW -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/ajustes.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo_comun.css" rel="stylesheet" type="text/css">
+    <link type="Image/x-icon" href="img/TA-TE-TI.ico" rel="icon">
+    <title>Ajustes</title>
+</head>
+
+<body id="todo">
+    <div id="usuario">sin indentificar</div>
+    <input id="mostrar-modal" name="modal" type="radio">
+    <nav class="header-navigation">
+        <ul class="ul-navigation">
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li><a href="juego.html">Juego Te-Ta-Ti</a></li>
+            <li><a href="xml/pagina.xml">Pagina XML</a></li>
+            <li id="elijido"><a href="#">Ajustes</a></li>
+            <li><a href="#"><label for="mostrar-modal">Mas info</label></a></li>
+        </ul>
+    </nav>
+
+    <input id="cerrar-modal" name="modal" type="radio">
+    <label for="cerrar-modal"> &times; </label>
+    <div id="modal">
+        <h2> &#60;- - - - - - - - Cerrar</h2>
+        <h4>Hecho por <span id="authorModal">Aleksndr Tarasov</span> 1DAW, CENEC
+        </h4>
+    </div>
+
+
+
+    <div id="zonaModo">
+        <img src="img/dia.png" id="dia" class="zonaModo" />
+        <img src="img/noche.png" id="noche" class="zonaModo" />
+    </div>
+    <h1>Trabajo Final 3er Trimestre</h1>
+    <h2>Hecho por <span id="author">Aleksandr Tarasov</span>, 1DAW, CENEC</h2>
+
+    <section id="ajustes">
+        <h5 id="esteParrafo">Elije el color de fondo para el nombre</h5>
+        <input type="color" name="colorElegido" />
+        <h5>Quién es el autor del proyecto</h5>
+        <select name="nombre">
+            <option elected="selected">Aleksandr Tarasov</option>
+            <option>Miguel Páramos</option>
+            <option>Carlos Boni</option>
+            <option>Silvia Garrido</option>
+            <option>Manoli Díaz</option>
+            <option>Rodolfo García</option>
+        </select>
+        <h5>Estilo del texto</h5>
+        <section id="radio-botones">
+            <label><input type="radio" name="estiloTexto" value="normal" checked> Normal</label>
+            <label><input type="radio" name="estiloTexto" value="cursiva"> Cursiva</label>
+            <label><input type="radio" name="estiloTexto" value="minusculas"> Minúsculas</label>
+        </section>
+
+        <button type="button" id="aplicar">Aplicar</button>
+    </section>
+
+    <!-- el archivo del JavaScript añadimos al fin del body -->
+    <script src="js/ajustes.js"></script>
+    <script src="js/mododianoche.js"></script>
+</body>
+
+</html>

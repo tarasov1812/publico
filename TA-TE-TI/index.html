@@ -1,6 +1,7 @@
 <!-- Author Aleksandr Tarasov 1DAW -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,27 @@
     <link type="Image/x-icon" href="TA-TE-TI.ico" rel="icon">
     <title>TA-TE-TI</title>
 </head>
-<body>
+
+<body id="todo">
+    <section id="ajustes">
+        <p id="esteParrafo">Elija el color del author</p>
+        <input type="color" name="colorElegido" />
+        <p>Elija el nombre del author</p>
+        <select name="nombre">
+            <option elected="selected">Aleksandr Tarasov</option>
+            <option>Carlos Boni</option>
+            <option>Mugiel Paramos</option>
+        </select>
+
+        <button type="button" id="aplicar">Aplicar</button>
+    </section>
+    
+    <div id="zonaModo">
+        <img src="./dia.png" id="dia">
+        <img src="./noche.png" id="noche">
+    </div>
     <h1>Juego <span id="ta">TA</span>-<span id="te">TE</span>-<span id="ti">TI</span></h1>
-    <h2>Hecho por Aleksandr Tarasov, 1DAW, CENEC</h2>
+    <h2>Hecho por <span id="author">Aleksandr Tarasov</span>, 1DAW, CENEC</h2>
     <div class="buttons">
         <button id="juego">Un juego</button>
         <button id="info">Más información</button>
@@ -34,7 +53,9 @@
             <div class="box" id="9"></div>
         </div>
     </div>
+
     <!-- el archivo del JavaScript añadimos al fin del body -->
     <script src="./index.js"></script>
 </body>
+
 </html>

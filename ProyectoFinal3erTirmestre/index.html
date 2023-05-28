@@ -1,0 +1,52 @@
+<!-- Author Aleksandr Tarasov 1DAW -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo_comun.css" rel="stylesheet" type="text/css">
+    <link type="Image/x-icon" href="img/TA-TE-TI.ico" rel="icon">
+    <title>La pagina Principal</title>
+</head>
+
+<body id="todo">
+    <div id="usuario">sin indentificar</div>
+    <input id="mostrar-modal" name="modal" type="radio">
+    <nav class="header-navigation">
+        <ul class="ul-navigation">
+            <li id="elijido"><a href="#">Pagina Principal</a></li>
+            <li><a href="juego.html">Juego Te-Ta-Ti</a></li>
+            <li><a href="xml/pagina.xml">Pagina XML</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+            <li><a href="#"><label for="mostrar-modal">Mas info</label></a></li>
+        </ul>
+    </nav>
+
+    <input id="cerrar-modal" name="modal" type="radio">
+    <label for="cerrar-modal"> &times; </label>
+    <div id="modal">
+        <h2> &#60;- - - - - - - - Cerrar</h2>
+        <h4>Hecho por <span id="authorModal">Aleksndr Tarasov</span> 1DAW, CENEC
+        </h4>
+    </div>
+
+    <div id="zonaModo">
+        <img src="img/dia.png" id="dia" class="zonaModo" />
+        <img src="img/noche.png" id="noche" class="zonaModo" />
+    </div>
+
+    <h1>Pagina Principal del trabajo Final 3er Trimestre</h1>
+    
+    <img src="img/foto.png" id="foto">
+    <h2>Hecho por <span id="author">Aleksandr Tarasov</span>, 1DAW, CENEC</h2>
+
+    <!-- el archivo del JavaScript añadimos al fin del body -->
+    <script src="js/index.js"></script>
+    <script src="js/ajustes.js"></script>
+    <script src="js/mododianoche.js"></script>
+</body>
+
+</html>

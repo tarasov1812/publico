@@ -1,0 +1,78 @@
+/* Author Aleksandr Tarasov 1DAW */
+
+body {
+    justify-content: flex-start;
+}
+
+/* Foto */
+
+#foto {
+    width: 20vh;
+    margin: 20px auto;
+}
+/* Cambiamos colores span en h1 */
+
+
+
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#container {
+    display: none;
+}
+
+.linea {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    margin: 10px 10px;
+    display: flex;
+    height: 8vw;
+    width: 8vw;
+    background-color: #0057FF;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+.buttons {
+    font-size: 2.5vw;
+    margin: 12px auto;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+    width: 30vw;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+#info {
+    margin-top: 16px;
+    padding:14px 0;
+    background-color: #FFFFFF;
+    color: #0057FF;
+    border: 1px solid #0057FF;
+    border-radius: 10px;
+}
+
+#info:hover, #juego:hover {
+    border: 1px solid orange;
+}
+
+#foto {
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}

@@ -1,0 +1,69 @@
+<!-- Author Aleksandr Tarasov 1DAW -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/juego.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo_comun.css" rel="stylesheet" type="text/css">
+    <link type="Image/x-icon" href="img/TA-TE-TI.ico" rel="icon">
+    <title>Juego TA-TE-TI</title>
+</head>
+
+<body id="todo">
+    <div id="usuario">sin indentificar</div>
+    <input id="mostrar-modal" name="modal" type="radio">
+    <nav class="header-navigation">
+        <ul class="ul-navigation">
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li id="elijido"><a href="#">Juego Te-Ta-Ti</a></li>
+            <li><a href="xml/pagina.xml">Pagina XML</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+            <li><a href="#"><label for="mostrar-modal">Mas info</label></a></li>
+        </ul>
+    </nav>
+
+    <input id="cerrar-modal" name="modal" type="radio">
+    <label for="cerrar-modal">  &times; </label>
+    <div id="modal">
+        <h2> &#60;- - - - - - - - Cerrar</h2>
+        <h4>Hecho por <span id="authorModal">Aleksndr Tarasov</span> 1DAW, CENEC
+        </h4>
+    </div>
+
+    <div id="zonaModo">
+        <img src="img/dia.png" id="dia" class="zonaModo" />
+        <img src="img/noche.png" id="noche" class="zonaModo" />
+    </div>
+    <h1>Juego <span id="ta">TA</span>-<span id="te">TE</span>-<span id="ti">TI</span></h1>
+    <h2>Hecho por <span id="author">Aleksandr Tarasov</span>, 1DAW, CENEC</h2>
+    <div class="buttons">
+        <button id="juego">Un juego</button>
+    </div>
+    <!-- creamos 9 div para el juego del TA-TE-TI -->
+    <div class="container" id="container">
+        <div class="linea">
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+        </div>
+        <div class="linea">
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+        </div>
+        <div class="linea">
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+            <div class="box" id="9"></div>
+        </div>
+    </div>
+
+    <!-- el archivo del JavaScript añadimos al fin del body -->
+    <script src="js/ajustes.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="js/mododianoche.js"></script>
+</body>
+</html>

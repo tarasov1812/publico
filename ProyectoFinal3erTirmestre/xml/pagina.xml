@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pagina.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://tarasov1812.github.io/publico/EjercicioXML/pagina.xsd">
+    <informacion>
+        <titulo>Pedro Navaja</titulo>
+        <autor>Rubén Blades, Willie Colon</autor>
+        <fecha>1978</fecha> 
+    </informacion>
+
+    <texto>
+        <estrofa>
+            <verso>Por la esquina del viejo barrio lo vi pasar</verso>
+            <verso>Con el tumbao' que tienen los guapos al caminar</verso>
+            <verso>Las manos siempre en los bolsillos de su gabán</verso>
+            <verso>Pa' que no sepan en cuál de ellas lleva el puñal</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Usa un sombrero de ala ancha de medio lao'</verso>
+            <verso>Y zapatillas por si hay problemas salir volao'</verso>
+            <verso>Lentes oscuros pa' que no sepan qué está mirando</verso>
+            <verso>Y un diente de oro que cuando ríe se ve brillando</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Como a tres cuadras de aquella esquina una mujer</verso>
+            <verso>Va recorriendo la acera entera por quinta vez</verso>
+            <verso>Y en un zaguán entra y se da un trago para olvidar</verso>
+            <verso>Que el día está flojo y no hay clientes pa' trabajar</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Un carro pasa muy despacito por la avenida</verso>
+            <verso>No tiene marcas, pero to' saben ques' policía uhm</verso>
+            <verso>Pedro Navaja las manos siempre dentro el gabán</verso>
+            <verso>Mira y sonríe y el diente de oro vuelve a brillar</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Mientras camina pasa la vista de esquina a esquina</verso>
+            <verso>No se ve un alma está desierta toa' la avenida</verso>
+            <verso>Cuando de pronto esa mujer sale del zaguán</verso>
+            <verso>Y Pedro Navaja aprieta un puño dentro 'el gabán</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Mira pa' un lado mira pa'l otro y no ve a nadie</verso>
+            <verso>Y a la carrera, pero sin ruido cruza la calle</verso>
+            <verso>Y mientras tanto en la otra acera va esa mujer</verso>
+            <verso>Refunfuñando pues no hizo pesos con qué comer</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Mientras camina del viejo abrigo saca un revolver, esa mujer</verso>
+            <verso>Y va a guardarlo en su cartera pa' que no estorbe</verso>
+            <verso>Un treinta y ocho smith and wilson del especial</verso>
+            <verso>Que carga encima pa' que la libre de todo mal</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Y Pedro Navaja puñal en mano le fue pa' encima</verso>
+            <verso>El diente de oro iba alumbrando toa' la avenida, ¡hizo fácil!</verso>
+            <verso>Mientras reía el puñal le hundía sin compasión</verso>
+            <verso>Cuando de pronto sonó un disparo como un cañón</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Y Pedro Navaja cayó en la acera mientras veía, a esa mujer</verso>
+            <verso>Que revolver en mano y de muerte herida a el le decía</verso>
+            <verso>Yo que pensaba: Hoy no es mi día, estoy salá</verso>
+            <verso>Pero Pedro Navaja tu estás peor, no estás en na'</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Y créanme gente que aunque hubo ruido nadie salió</verso>
+            <verso>No hubo curiosos, no hubo preguntas nadie lloró</verso>
+            <verso>Solo un borracho con los dos cuerpos se tropezó</verso>
+            <verso>Cogió el revólver, el puñal, los pesos y se marchó</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <verso>Y tropezando se fue cantando desafínao'</verso>
+            <verso>El coro que aquí les traje y da el mensaje de mi canción</verso>
+            <verso>La vida te da sorpresas, sorpresas te da la vida ay Dios</verso>
+            <verso>Pedro navajas matón de esquina, quien a hierro mata, a hierro termina</verso>
+        </estrofa>
+    </texto>
+
+</cancion>

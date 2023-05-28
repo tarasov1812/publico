@@ -1,0 +1,177 @@
+/* Author Aleksandr Tarasov 1DAW */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+/* Letras */
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    margin: 2px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    margin: 2px;
+
+}
+
+p {
+    font-size: 1vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    margin: 2px;
+
+}
+
+/* Modal  */
+
+#modal {
+    background: rgba(0, 0, 0, 0.90);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    z-index: 3;
+}
+
+#modal h4 {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: wheat;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#modal h2 {
+    color: #FFFFFF;
+}
+
+#mostrar-modal {
+    display: none;
+}
+
+#mostrar-modal:checked ~ #modal {
+    top: 0;
+}
+
+#cerrar-modal {
+    display: none;
+}
+
+#cerrar-modal + label {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    z-index: 4;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    background: red;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .10s;
+}
+
+#cerrar-modal:checked ~ #modal {
+    top: -100vh;
+}
+
+#cerrar-modal + label {
+    display: none;
+}
+
+#mostrar-modal:checked ~ #cerrar-modal + label {
+    display: block;
+}
+
+#cerrar-modal:checked + label {
+    display: none;
+}
+
+/* Navigacion */
+
+#elijido {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: skyblue;
+}
+
+.ul-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ul-navigation li {
+    border: 1px solid black;
+    margin: 0 5px;
+    background-color: #0057FF;
+    border-radius: 5px;
+    padding: 4px;
+}
+ 
+a {
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Style modo dia noche */
+
+#zonaModo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+#zonaModo:hover {
+    cursor: pointer;
+}
+
+#dia {
+    display: none;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+}
