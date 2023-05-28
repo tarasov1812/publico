@@ -1,4 +1,4 @@
-// Файл: modo.js
+// mododianoche
 
 document.addEventListener("DOMContentLoaded", function() {
     let modo = leerModoActual();

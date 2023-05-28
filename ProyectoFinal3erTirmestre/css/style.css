@@ -10,9 +10,6 @@ body {
     width: 20vh;
     margin: 20px auto;
 }
-/* Cambiamos colores span en h1 */
-
-
 
 .container {
     flex-direction: column;
