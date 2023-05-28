@@ -38,8 +38,8 @@
 					<h4>Hecho por <div id="authorModal">Aleksndr Tarasov</div> 1DAW, CENEC </h4>
 				</div>
 				<div id="zonaModo">
-					<img src="img/dia.png" id="dia" class="zonaModo" alt="sol" />
-					<img src="img/noche.png" id="noche" class="zonaModo" alt="luna" />
+					<img src="../img/dia.png" id="dia" class="zonaModo" alt="sol" />
+					<img src="../img/noche.png" id="noche" class="zonaModo" alt="luna" />
 				</div>
 				<h1>Archivo XML</h1>
 				<h2 id="author">
